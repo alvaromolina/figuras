@@ -7,16 +7,24 @@ public class Square implements Figure {
 
     @Override
     public double perimeter() {
-        return 0;
+
+        return 4*width;
     }
 
     @Override
     public double area() {
-        return 0;
+        return width*width;
     }
 
     @Override
     public void draw() {
+        System.out.println("area:" + this.area() + ", perimetro"+this.perimeter());
+        for (int i=0; i<width;i++){
+            for (int e=0; e<width;e++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
 
     }
 }

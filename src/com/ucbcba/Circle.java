@@ -6,14 +6,15 @@ public class Circle implements Figure{
     Circle(double radius) {    this.radius = radius;  }
 
     public double perimeter(){
-        return radius;
+        return 2*Math.PI*radius;
     }
     public double area(){
-        return radius;
+        return 2*Math.PI*(Math.pow(radius,2));
     }
 
     @Override
     public void draw() {
+        System.out.println("area:" + this.area() + ", perimetro"+this.perimeter());
 
     }
 }

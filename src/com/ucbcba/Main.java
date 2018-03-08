@@ -8,10 +8,14 @@ public class Main {
         Drawable cuadrado2 = new Square(10);
         Drawable redondo = new Circle(10);
         draw(cuadrado);
+        draw(cuadrado2);
+        draw(redondo);
+
         // write your code here
     }
 
     public static void draw(Drawable drawable){
+        System.out.println(drawable.getClass().getSimpleName());
         drawable.draw();
     }
 }
